@@ -87,13 +87,126 @@
       <section class="market-section" id="menu">
         <div class="market-section-content">
           <h2 class="mb-5">Menu</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Sandwiches, paninis, hoagies, and salads</h3>
-              <div class="subheading mb-3">Made to order</div>
+          <div class="accordion" id="menu-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="sandwichHeading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sandwiches" aria-expanded="true" aria-controls="sandwiches">
+                  Sandwiches
+                </button>
+              </h2>
+              <div id="sandwiches" class="accordion-collapse collapse show" aria-labelledby="sandwichHeading" data-bs-parent="#menu-accordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>Lion Club</strong> $9.89<br>
+                      turkey, ham, bacon, american cheese, lettuce, tomato, mayo
+                    </li>
+                    <li>
+                      <strong>The Chief</strong> $9.29<br>
+                      roast beef, provolone, lettuce, fresh horseradish, mayo
+                    </li>
+                    <li>
+                      <strong>Big John</strong> $8.29<br>
+                      German bologna, colby, lettuce, tomato, mayo
+                    </li>
+                    <li>
+                      <strong>Turkey</strong> $8.79<br>
+                      turkey, American cheese, lettuce, tomato, onion, mayo
+                    </li>
+                    <li>
+                      <strong>Ham</strong> $8.79<br>
+                      ham, American cheese, lettuce, tomato, onion, mayo
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="paniniHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panini" aria-expanded="false" aria-controls="panini">
+                  Panini
+                </button>
+              </h2>
+              <div id="panini" class="accordion-collapse collapse" aria-labelledby="paniniHeading" data-bs-parent="#menu-accordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>Jail Bird</strong> $8.89<br>
+                      ham, Swiss cheese, pickles, spicy mustard
+                    </li>
+                    <li>
+                      <strong>Hot Ham</strong> $8.89<br>
+                      ham, cheese
+                    </li>
+                    <li>
+                      <strong>Steak</strong> $9.29<br>
+                      roast beef, provolone, onion, A1 sauce
+                    </li>
+                    <li>
+                      <strong>Pizza</strong> $8.29<br>
+                      pepperoni, cheese
+                    </li>
+                    <li>
+                      <strong>Grilled Cheese</strong> $7.99<br>
+                      provolone, pepper jack, colby
+                    </li>
+                    <li>
+                      <strong>Chicken Pesto</strong> $8.89<br>
+                      chicken, provolone, tomato, pesto
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="hoagieHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hoagies" aria-expanded="false" aria-controls="hoagies">
+                  Hoagies
+                </button>
+              </h2>
+              <div id="hoagies" class="accordion-collapse collapse" aria-labelledby="hoagieHeading" data-bs-parent="#menu-accordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Italian</strong> $9.29</li>
+                    <li><strong>Turkey</strong> $9.29</li>
+                    <li><strong>Ham</strong> $9.29</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="wrapHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wraps" aria-expanded="false" aria-controls="wraps">
+                  Wraps
+                </button>
+              </h2>
+              <div id="wraps" class="accordion-collapse collapse" aria-labelledby="wrapHeading" data-bs-parent="#menu-accordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Chicken Bacon Ranch</strong> $8.49</li>
+                    <li><strong>Turkey Club</strong> $8.49</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="saladHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#salads" aria-expanded="false" aria-controls="salads">
+                  Salads
+                </button>
+              </h2>
+              <div id="salads" class="accordion-collapse collapse" aria-labelledby="saladHeading" data-bs-parent="#menu-accordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Small Garden</strong> $4.99</li>
+                    <li><strong>Large Garden</strong> $7.99</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
       </section>
       <hr class="m-0" />
       <!-- Beverages -->
