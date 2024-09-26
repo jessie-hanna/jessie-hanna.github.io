@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 scrollPosition = movePrev(carouselElement, scrollPosition)
             });
         } else {
+            console.log('click');
             carouselElement.classList.add("slide");
         }
     };
